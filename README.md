@@ -27,7 +27,7 @@ zerops:
       # Build with Node.js (npm/npx available), serve with Nginx.
       # The build container compiles Vue source into static assets —
       # Node.js is NOT present at runtime.
-      base: nodejs@22
+      base: nodejs@24
 
       # VITE_* variables are embedded into the bundle at build time.
       # Zerops runtime env vars are accessible during build with the
@@ -61,7 +61,7 @@ zerops:
   # and start the Vite dev server immediately. Not for serving traffic.
   - setup: dev
     build:
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
 
       # npm install (not npm ci) — tolerates a missing or outdated
@@ -77,9 +77,9 @@ zerops:
         - node_modules
 
     run:
-      # nodejs@22 runtime — developer needs Node.js to run the Vite
+      # nodejs@24 runtime — developer needs Node.js to run the Vite
       # dev server via SSH. Static runtime is not used here.
-      base: nodejs@22
+      base: nodejs@24
       os: ubuntu
 
       # Keep the container alive without starting any server.

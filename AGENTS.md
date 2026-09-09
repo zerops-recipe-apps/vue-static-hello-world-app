@@ -6,7 +6,7 @@ Minimal Vue 3 + Vite + TypeScript app built into static files by Node.js and ser
 
 - HTTP port: dev `5173` (vite dev) / prod `80` (nginx)
 - Siblings: —
-- Runtime base: dev `nodejs@22` / prod `static`
+- Runtime base: dev `nodejs@24` / prod `static`
 
 ## Zerops dev
 
