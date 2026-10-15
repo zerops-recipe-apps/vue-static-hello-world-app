@@ -13,7 +13,7 @@ zerops:
       # RUNTIME_ prefix — set RUNTIME_VITE_APP_ENV on the service to
       # override this value without changing zerops.yaml.
       envVariables:
-        VITE_APP_ENV: production
+        VITE_APP_ENV: ${RUNTIME_APP_ENV:-production}
 
       buildCommands:
         # npm ci installs exact versions from package-lock.json —
